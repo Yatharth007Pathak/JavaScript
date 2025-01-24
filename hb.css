@@ -1,0 +1,12 @@
+#parent {
+    padding: 50px;
+    background-color: lightblue;
+}
+#child {
+    padding: 20px;
+    background-color: lightcoral;
+    cursor: pointer;
+}
+a {
+    color: blue;
+}

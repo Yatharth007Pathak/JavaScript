@@ -1,0 +1,39 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    display: inline-block;
+    text-align: center;
+    line-height: 150px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 8px;
+  }
+  .click-box {
+    background-color: #f0ad4e;
+  }
+  .dblclick-box {
+    background-color: #5bc0de;
+  }
+  .mousedown-box {
+    background-color: #d9534f;
+  }
+  .mouseup-box {
+    background-color: #5cb85c;
+  }
+  .mousemove-box {
+    background-color: #f7f7f7;
+    border: 2px dashed #333;
+  }
+  .hover-box {
+    background-color: #337ab7;
+    color: white;
+  }

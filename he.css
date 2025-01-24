@@ -1,0 +1,33 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Light mode styles (default) */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+#toggle-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#toggle-btn:hover {
+    background-color: #555;
+}

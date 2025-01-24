@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation with Append, Prepend, Before, and After</title>
+  <style>
+    /* External CSS for the parent div */
+    #parentDiv {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f0f8ff;
+      border: 2px solid #add8e6;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Styling for paragraphs */
+    p {
+      font-size: 18px;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    /* Button styling */
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Styling for extra divs */
+    #extraDiv {
+      background-color: #ffebcd;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #deb887;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="parentDiv">
+    <p>This is the original content of the parent div.</p>
+  </div>
+  
+  <div id="extraDiv">
+    <p>This is an extra div for using "before" and "after".</p>
+  </div>
+  
+  <button onclick="addElementAppend()">Append</button>
+  <button onclick="addElementPrepend()">Prepend</button>
+  <button onclick="addElementBefore()">Before</button>
+  <button onclick="addElementAfter()">After</button>
+
+  <script src="gm.js"></script>
+</body>
+</html>

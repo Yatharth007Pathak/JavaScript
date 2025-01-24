@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>append Example</title>
+  <style>
+    /* External CSS for the parent div */
+    #parentDiv {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f0f8ff;
+      border: 2px solid #add8e6;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Styling for the added paragraphs */
+    #parentDiv p {
+      font-size: 18px;
+      color: #333;
+      margin: 10px 0;
+    }
+
+    /* Button styling */
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="parentDiv">
+    <p>This is the original content of the parent div.</p>
+  </div>
+  <button onclick="addElement()">Add New Element</button>
+
+  <script src="gk.js"></script>
+</body>
+</html>
