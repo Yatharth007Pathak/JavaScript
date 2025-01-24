@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Example</title>
+    <script src="fb.js"></script>
+</head>
+
+<body>
+  <h1 id="heading">Hello, World!</h1>
+  <script>
+    // Access the document title
+    console.log(document.title); // Outputs: Document Object Example
+
+    // Change the heading text
+    const heading = document.getElementById("heading");
+    heading.textContent = "Welcome to JavaScript!";
+  </script>
+</body>
+</html>

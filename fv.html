@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selection Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mainHeading">Welcome to DOM Selection</h1>
+    <p class="description">This is the first paragraph.</p>
+    <p class="description">This is the second paragraph.</p>
+    <ul>
+        <li class="listItem">Item 1</li>
+        <li class="listItem">Item 2</li>
+        <li class="listItem">Item 3</li>
+    </ul>
+    <div id="output"></div>
+    <button id="selectById">Select by ID</button>
+    <button id="selectByClassName">Select by Class</button>
+    <button id="selectByTagName">Select by Tag Name</button>
+    <button id="selectByQuerySelector">Select by Query Selector</button>
+    <button id="selectByQuerySelectorAll">Select by Query Selector All</button>
+    <script src="fv.js"></script>
+</body>
+</html>
