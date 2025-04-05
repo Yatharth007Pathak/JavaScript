@@ -1,0 +1,107 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --accent-color: red;
+  --font-family: 'Arial', sans-serif;
+  --dot-size: 10px;
+  --message-font-size: 1.5em;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  overflow: hidden;
+}
+
+/* App Container */
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Canvas Styling */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+/* Center Dot Styling */
+#centerDot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  background: var(--accent-color);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
+  animation: pulse 1.5s infinite;
+}
+
+/* Pulse Animation for Center Dot */
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+/* Message Styling */
+#message {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: var(--message-font-size);
+  text-align: center;
+  color: var(--text-color);
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in Animation for Message */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  :root {
+    --message-font-size: 1.2em;
+    --dot-size: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --message-font-size: 1em;
+    --dot-size: 6px;
+  }
+}

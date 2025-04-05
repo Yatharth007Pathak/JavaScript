@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Atom Visualization</title>
+
+    <link href="Atom3d.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+<body>
+    <canvas id="atomCanvas" width="600" height="600"></canvas>
+    <div id="atom-selector">
+        <label for="atom">Choose an atom:</label>
+        <select id="atom">
+            <option value="hydrogen">Hydrogen</option>
+            <option value="helium">Helium</option>
+            <option value="lithium">Lithium</option>
+            <option value="beryllium">Beryllium</option>
+            <option value="boron">Boron</option>
+            <option value="carbon">Carbon</option>
+            <option value="nitrogen">Nitrogen</option>
+            <option value="oxygen">Oxygen</option>
+            <option value="fluorine">Fluorine</option>
+            <option value="neon">Neon</option>
+            <option value="sodium">Sodium</option>
+            <option value="magnesium">Magnesium</option>
+            <option value="aluminum">Aluminum</option>
+            <option value="silicon">Silicon</option>
+            <option value="phosphorus">Phosphorus</option>
+            <option value="sulfur">Sulfur</option>
+            <option value="chlorine">Chlorine</option>
+            <option value="argon">Argon</option>
+            <option value="potassium">Potassium</option>
+            <option value="calcium">Calcium</option>
+            <option value="scandium">Scandium</option>
+            <option value="titanium">Titanium</option>
+            <option value="vanadium">Vanadium</option>
+            <option value="chromium">Chromium</option>
+            <option value="manganese">Manganese</option>
+            <option value="iron">Iron</option>
+            <option value="cobalt">Cobalt</option>
+            <option value="nickel">Nickel</option>
+            <option value="copper">Copper</option>
+            <option value="zinc">Zinc</option>
+            <option value="gallium">Gallium</option>
+            <option value="germanium">Germanium</option>
+            <option value="arsenic">Arsenic</option>
+            <option value="selenium">Selenium</option>
+            <option value="bromine">Bromine</option>
+            <option value="krypton">Krypton</option>
+            <option value="rubidium">Rubidium</option>
+            <option value="strontium">Strontium</option>
+            <option value="yttrium">Yttrium</option>
+            <option value="zirconium">Zirconium</option>
+            <option value="niobium">Niobium</option>
+            <option value="molybdenum">Molybdenum</option>
+            <option value="technetium">Technetium</option>
+            <option value="ruthenium">Ruthenium</option>
+            <option value="rhodium">Rhodium</option>
+            <option value="palladium">Palladium</option>
+            <option value="silver">Silver</option>
+            <option value="cadmium">Cadmium</option>
+            <option value="indium">Indium</option>
+            <option value="tin">Tin</option>
+            <option value="antimony">Antimony</option>
+            <option value="tellurium">Tellurium</option>
+            <option value="iodine">Iodine</option>
+            <option value="xenon">Xenon</option>
+            <option value="cesium">Cesium</option>
+            <option value="barium">Barium</option>
+            <option value="lanthanum">Lanthanum</option>
+            <option value="cerium">Cerium</option>
+            <option value="praseodymium">Praseodymium</option>
+            <option value="neodymium">Neodymium</option>
+            <option value="promethium">Promethium</option>
+            <option value="samarium">Samarium</option>
+            <option value="europium">Europium</option>
+            <option value="gadolinium">Gadolinium</option>
+            <option value="terbium">Terbium</option>
+            <option value="dysprosium">Dysprosium</option>
+            <option value="holmium">Holmium</option>
+            <option value="erbium">Erbium</option>
+            <option value="thulium">Thulium</option>
+            <option value="ytterbium">Ytterbium</option>
+            <option value="lutetium">Lutetium</option>
+            <option value="tantalum">Tantalum</option>
+            <option value="tungsten">Tungsten</option>
+            <option value="rhenium">Rhenium</option>
+            <option value="osmium">Osmium</option>
+            <option value="iridium">Iridium</option>
+            <option value="platinum">Platinum</option>
+            <option value="gold">Gold</option>
+            <option value="mercury">Mercury</option>
+            <option value="thallium">Thallium</option>
+            <option value="lead">Lead</option>
+            <option value="bismuth">Bismuth</option>
+            <option value="polonium">Polonium</option>
+            <option value="astatine">Astatine</option>
+            <option value="radon">Radon</option>
+            <option value="francium">Francium</option>
+            <option value="radium">Radium</option>
+            <option value="actinium">Actinium</option>
+            <option value="thorium">Thorium</option>
+            <option value="protactinium">Protactinium</option>
+            <option value="uranium">Uranium</option>
+            <option value="neptunium">Neptunium</option>
+            <option value="plutonium">Plutonium</option>
+            <option value="americium">Americium</option>
+            <option value="curium">Curium</option>
+            <option value="berkelium">Berkelium</option>
+            <option value="californium">Californium</option>
+            <option value="einsteinium">Einsteinium</option>
+            <option value="fermium">Fermium</option>
+            <option value="mendelevium">Mendelevium</option>
+            <option value="nobelium">Nobelium</option>
+            <option value="lawrencium">Lawrencium</option>
+            <option value="rutherfordium">Rutherfordium</option>
+            <option value="dubnium">Dubnium</option>
+            <option value="seaborgium">Seaborgium</option>
+            <option value="bohrium">Bohrium</option>
+            <option value="hassium">Hassium</option>
+            <option value="meitnerium">Meitnerium</option>
+            <option value="darmstadtium">Darmstadtium</option>
+            <option value="roentgenium">Roentgenium</option>
+            <option value="copernicium">Copernicium</option>
+            <option value="nihonium">Nihonium</option>
+            <option value="flerovium">Flerovium</option>
+            <option value="moscovium">Moscovium</option>
+            <option value="livermorium">Livermorium</option>
+            <option value="tennessine">Tennessine</option>
+            <option value="oganesson">Oganesson</option>
+        </select>
+    </div>
+
+    <script src="Atom3d.js"></script>      
+
+</body>
+</html>

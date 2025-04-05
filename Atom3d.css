@@ -1,0 +1,45 @@
+/* General body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    background-color: #000; /* Black background */
+    color: #fff; /* Default text color */
+    font-family: Arial, sans-serif; /* Better readability */
+}
+
+/* Canvas styling */
+canvas {
+    background-color: #000; /* Consistent black background */
+}
+
+/* Atom selector container */
+#atom-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.125rem; /* Scalable font size (18px equivalent) */
+    color: black; /* Text color for visibility */
+    padding: 0.5em 1em; /* Padding for better accessibility */
+    background-color: cyan; /* Background for contrast */
+    border-radius: 8px; /* Smooth corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for select and label */
+select, label {
+    color: black; /* White text for contrast */
+    background: transparent; /* Ensure no background clashes */
+    border: none; /* Clean look */
+    font-size: 1rem; /* Scalable font size */
+    padding: 0.25em; /* Comfortable spacing */
+}
+
+/* Add hover effects for interaction feedback */
+#atom-selector:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Slightly enlarge on hover */
+    transition: 0.3s ease; /* Smooth transition */
+}
