@@ -1,0 +1,59 @@
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Heading and instructions */
+h1 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px #000;
+}
+
+p {
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 600px;
+  color: #ddd;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+  text-align: center;
+}
+
+/* Canvas styling */
+canvas {
+  border: 3px solid #ffcc00;
+  background-color: #111;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+canvas:hover {
+  border-color: #fff;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.7);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juicy Fruit Ninja</title>
+  <link rel="stylesheet" href="FruitNinja.css">
+</head>
+<body>
+  <div id="game">
+    <canvas id="canvas" width="340" height="660"></canvas>
+    <div id="score">0</div>
+
+    <div id="menu">
+      <h1>Juicy Fruit Ninja 🍍</h1>
+      <div style="display:flex;gap:10px">
+        <button id="startBtn" class="btn">🍊 Start</button>
+        <button id="howBtn" class="btn secondary">ℹ How</button>
+      </div>
+      <div class="floating-fruits" id="menuFruits"></div>
+    </div>
+
+    <div id="gameover" style="display:none;">
+      <h1>Game Over 💥</h1>
+      <div style="display:flex;gap:12px">
+        <button id="restartBtn" class="btn">🔁 Restart</button>
+        <button id="homeBtn" class="btn secondary">🏠 Menu</button>
+      </div>
+      <div class="floating-fruits" id="overFruits"></div>
+    </div>
+
+    <div class="fruit-popup" id="fruitPopupContainer"></div>
+   
+    <div class="credit">Created by Yatharth</div>
+
+    <div id="howModal">
+      <div id="howContent">
+        <div style="font-size:18px;font-weight:700;margin-bottom:10px;">How to Play</div>
+        <div>Swipe across fruits to slice them.<br/>Avoid bombs or game ends!</div>
+        <button id="closeHow">Got it!</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="FruitNinja.js"></script>
+</body>
+</html>

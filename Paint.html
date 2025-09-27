@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paint</title>
+        <link rel="stylesheet" href="Paint.css">
+        <script src="Paint.js" defer></script>
+    </head>
+    <body>
+        <div id="color-palette">
+            <div id="colors">
+                <button id="black" onclick="changeColor('black')" ontouchstart="changeColor('black')"></button>
+                <button id="red" onclick="changeColor('red')" ontouchstart="changeColor('red')"></button>
+                <button id="green" onclick="changeColor('green')" ontouchstart="changeColor('green')"></button>
+                <button id="blue" onclick="changeColor('blue')" ontouchstart="changeColor('blue')"></button>
+                <button id="yellow" onclick="changeColor('yellow')" ontouchstart="changeColor('yellow')"></button>
+                <button id="orange" onclick="changeColor('orange')" ontouchstart="changeColor('orange')"></button>
+                <button id="pink" onclick="changeColor('pink')" ontouchstart="changeColor('pink')"></button>
+                <button id="purple" onclick="changeColor('purple')" ontouchstart="changeColor('purple')"></button>
+                <button id="brown" onclick="changeColor('brown')" ontouchstart="changeColor('brown')"></button>
+                <button id="cyan" onclick="changeColor('cyan')" ontouchstart="changeColor('cyan')"></button>
+                <button id="lime" onclick="changeColor('lime')" ontouchstart="changeColor('lime')"></button>
+                <button id="teal" onclick="changeColor('teal')" ontouchstart="changeColor('teal')"></button>
+                <button id="magenta" onclick="changeColor('magenta')" ontouchstart="changeColor('magenta')"></button>
+                <button id="navy" onclick="changeColor('navy')" ontouchstart="changeColor('navy')"></button>
+                <button id="gold" onclick="changeColor('gold')" ontouchstart="changeColor('gold')"></button>
+                <button id="silver" onclick="changeColor('silver')" ontouchstart="changeColor('silver')"></button>
+                <button id="maroon" onclick="changeColor('maroon')" ontouchstart="changeColor('maroon')"></button>
+                <button id="olive" onclick="changeColor('olive')" ontouchstart="changeColor('olive')"></button>
+                <button id="coral" onclick="changeColor('coral')" ontouchstart="changeColor('coral')"></button>
+                <button id="indigo" onclick="changeColor('indigo')" ontouchstart="changeColor('indigo')"></button>
+                <button id="violet" onclick="changeColor('violet')" ontouchstart="changeColor('violet')"></button>
+            </div>
+            </div>
+            <button id="eraser" onclick="toggleEraser()">Eraser</button>
+        </div>
+
+        <canvas id="canvas" width="1000" height="530"></canvas>
+
+        <div id="controls">
+            <button onclick="clearCanvas()">Clear</button>
+        </div>
+    </body>
+</html>

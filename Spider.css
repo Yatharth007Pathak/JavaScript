@@ -1,0 +1,18 @@
+*{
+    padding:0;
+    margin:0;
+}
+.game-name{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    padding: 20px 0;
+}
+.grey-text{
+    color:grey;
+}
+#canvas{
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+  <meta name="description" content="Play Glow Hockey Pro - an exciting air hockey game against the computer">
+  <title>Glow Hockey Pro</title>
+  <link rel="stylesheet" href="GlowHockey.css">
+</head>
+<body>
+  
+  <!-- Scoreboard Section -->
+  <header class="scoreboard">
+    <div class="score-section" aria-label="Computer Score">
+      <span class="player-name ai-name">Computer</span>
+      <span class="score" id="aiScore">0</span>
+    </div>
+    <div class="score-section" aria-label="Player Score">
+      <span class="player-name">Player</span>
+      <span class="score" id="playerScore">0</span>
+    </div>
+  </header>
+  
+  <!-- Game Container -->
+    <div class="game-container">
+      <canvas id="gameCanvas" width="800" height="600" aria-label="Hockey game arena" role="img"></canvas>
+      <div class="game-status" id="gameStatus" aria-live="polite">Touch the ball to start!</div>
+    </div>
+
+  <!-- Game Over Screen -->
+  <section class="game-over" id="gameOver" aria-live="polite" hidden>
+    <h2 id="winnerText">Game Over</h2>
+    <button id="restart-game" class="restart-btn">Play Again</button>
+  </section>
+
+  <!-- Scripts -->
+  <script src="GlowHockey.js"></script>
+</body>
+</html>

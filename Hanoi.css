@@ -1,0 +1,88 @@
+/* Global reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #b50c0c, #8e0000); /* Modern gradient background */
+    color: #f9f9f9; /* Softer white for text */
+    font-family: 'Cambria', 'Cochin', 'Georgia', 'Times New Roman', serif;
+    font-size: 18px;
+    line-height: 1.6; /* Improve readability */
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Canvas styling with shadow for emphasis */
+canvas {
+    background-color: #000; /* Strong contrast */
+    border: 2px solid #f9f9f9; /* White border for separation */
+    border-radius: 8px; /* Smooth edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    margin: 20px 0; /* Space around the element */
+}
+
+/* Responsive elements with dynamic widths */
+#s {
+    width: 100%;
+    max-width: 300px; /* Adaptable width for smaller screens */
+    padding: 10px;
+}
+
+#n {
+    width: 100%;
+    max-width: 180px; /* Match design constraints */
+    padding: 10px;
+}
+
+/* Horizontal rule with decorative styling */
+hr {
+    width: 80%; /* Responsive width */
+    max-width: 400px; /* Restrict maximum size */
+    border: none; /* Remove default styling */
+    height: 2px; /* Custom thickness */
+    background: #f9f9f9; /* Consistent color */
+    margin: 20px auto; /* Centered with spacing */
+    opacity: 0.8; /* Slight transparency for softness */
+}
+
+/* Anchor tag styling */
+a {
+    color: #66D9EF; /* Modern and eye-catching */
+    font-weight: bold; /* Emphasize links */
+    text-decoration: none; /* Clean appearance */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth hover effects */
+}
+
+/* Hover effect for links */
+a:hover {
+    color: #fff; /* White for emphasis */
+    text-decoration: underline; /* Clear visual feedback */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Adjust font size for readability */
+        padding: 10px;
+    }
+
+    canvas {
+        width: 90%; /* Ensure it fits smaller screens */
+    }
+
+    hr {
+        width: 90%; /* Consistent responsive behavior */
+    }
+
+    #s,
+    #n {
+        width: 90%; /* Full width with padding */
+    }
+}

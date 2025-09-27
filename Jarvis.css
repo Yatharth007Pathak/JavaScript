@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Default Theme (Dark Mode) */
+body {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: #00bcd4;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Light Mode */
+body.light-mode {
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    color: #222;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: #ffffff;
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #00bcd4;
+    border-radius: 5px;
+}
+
+body.light-mode::-webkit-scrollbar-track {
+    background: #e0e0e0;
+}
+
+body.light-mode::-webkit-scrollbar-thumb {
+    background: #ff5722;
+}
+
+/* Main Section */
+.main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Image Section */
+.image-container {
+    padding: 10px;
+}
+
+.image-container .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container .image img {
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.image-container .image img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0px 0px 10px #00bcd4);
+}
+
+/* Headings */
+h1 {
+    font-size: 42px;
+    color: #00bcd4;
+    margin-top: 15px;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+body.light-mode h1 {
+    color: #ff5722;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    color: #a8dadc;
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+body.light-mode p {
+    color: #333;
+}
+
+/* Microphone Input */
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    min-width: 280px;
+    height: 50px;
+    border-radius: 25px;
+    background: rgba(202, 253, 255, 0.5);
+    backdrop-filter: blur(5px);
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.input:hover {
+    background: rgba(202, 253, 255, 0.7);
+    transform: scale(1.02);
+}
+
+/* Microphone Button */
+.input .talk {
+    background: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.input .talk i {
+    font-size: 24px;
+    color: #aed0d0;
+    transition: color 0.3s ease-in-out;
+}
+
+.input .talk:hover i {
+    color: #00bcd4;
+    filter: drop-shadow(0px 0px 5px #00bcd4);
+}
+
+.input .talk:active {
+    transform: scale(0.9);
+}
+
+/* Pulse Animation for Microphone Button */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.input .talk.active {
+    animation: pulse 1s infinite;
+}
+
+/* Input Placeholder */
+.input .content {
+    color: #aed0d0;
+    font-size: 16px;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+
+body.light-mode .input .content {
+    color: #333;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: 2px solid #00bcd4;
+    color: #00bcd4;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+    background: #00bcd4;
+    color: #000;
+}
+
+.dark-mode-toggle:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 188, 212, 0.5);
+}
+
+/* Light Mode Button */
+body.light-mode .dark-mode-toggle {
+    border-color: #ff5722;
+    color: #ff5722;
+}
+
+body.light-mode .dark-mode-toggle:hover {
+    background: #ff5722;
+    color: #fff;
+}
+
+body.light-mode .dark-mode-toggle:focus {
+    box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.5);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .input {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .input {
+        width: 90%;
+    }
+
+    .dark-mode-toggle {
+        top: 10px;
+        right: 10px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}

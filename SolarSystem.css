@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  height: 100vh;
+  background: black;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Canvas background with space vibe */
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: radial-gradient(circle at center, #000 70%, #020b1c 100%);
+}
+
+/* Side panel */
+.panel {
+  background: rgba(20, 20, 30, 0.95);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  border-left: 2px solid #2a2a40;
+  backdrop-filter: blur(6px);
+}
+
+/* Headings */
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #ffd166;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+}
+
+/* Buttons */
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #555;
+}
+button:active {
+  background: #777;
+}
+
+/* Range sliders */
+input[type="range"] {
+  width: 100%;
+  cursor: pointer;
+  accent-color: #ffd166;
+  margin: 6px 0;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Planet list */
+.planet-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 6px 0;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+.planet-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+/* Planet info box */
+#planetInfo {
+  margin-top: 15px;
+  padding: 12px;
+  border: 1px solid #444;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* Responsive: stack panel below canvas on small screens */
+@media (max-width: 900px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 300px;
+  }
+  .panel {
+    border-left: none;
+    border-top: 2px solid #2a2a40;
+    height: auto;
+    max-height: 40vh;
+  }
+}

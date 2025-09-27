@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color: rgb(0, 61, 61);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Main Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(0, 76, 76);
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Digits Display */
+  .digit {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  /* Text */
+  .txt {
+    font-size: 0.9rem;
+    color: #fffcd6;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Container */
+  #buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  /* Shared Button Styles */
+  .btn {
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    transition: transform 0.2s, opacity 0.2s, box-shadow 0.3s;
+  }
+  
+  /* Start Button */
+  #start {
+    background-color: #009779;
+  }
+  
+  #start:hover {
+    background-color: #007f63;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 151, 121, 0.5);
+  }
+  
+  /* Stop Button */
+  #stop {
+    background-color: #0e85fc;
+  }
+  
+  #stop:hover {
+    background-color: #0b6bcc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(14, 133, 252, 0.5);
+  }
+  
+  /* Reset Button */
+  #reset {
+    background-color: #c91400;
+  }
+  
+  #reset:hover {
+    background-color: #a11200;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(201, 20, 0, 0.5);
+  }
+  
+  /* Accessibility Feature: Button Focus */
+  .btn:focus {
+    outline: 2px solid #fffcd6;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .digit {
+      font-size: 2rem;
+    }
+  
+    .btn {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }

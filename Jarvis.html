@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS Virtual Assistant</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="Jarvis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loading Spinner -->
+    <div class="loading-spinner" aria-hidden="true">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i> Toggle Dark Mode
+        </button>
+        <div class="time-display" aria-live="polite"></div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="main">
+        <!-- Image Container -->
+        <div class="image-container">
+            <div class="image">
+                <img src="./images/giphy.gif" alt="JARVIS Virtual Assistant Animation">
+            </div>
+        </div>
+
+        <!-- Heading and Description -->
+        <h1>J A R V I S</h1>
+        <p>I am your Virtual Assistant JARVIS. How may I help you?</p>
+
+        <!-- Input Section -->
+        <div class="input">
+            <button class="talk" aria-label="Start voice command">
+                <i class="fas fa-microphone-alt"></i>
+            </button>
+            <p class="content">Click here to speak</p>
+        </div>
+
+        <!-- Display User Input -->
+        <p class="user-input-display" aria-live="polite"></p>
+
+        <!-- Error Handling Section -->
+        <div class="error-display" aria-live="assertive"></div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-links">
+            <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2023 JARVIS Virtual Assistant. All rights reserved.</p>
+    </footer>
+
+    <!-- External Script -->
+    <script src="Jarvis.js"></script>
+</body>
+</html>

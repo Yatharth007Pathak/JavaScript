@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TestTube Game - Water Sort Puzzle">
+    <title>Prismory - Water Sort Puzzle</title>
+    <link rel="stylesheet" href="Testtube.css">
+</head>
+<body>
+
+    <div id="game">
+        <!-- Menu Section -->
+        <nav id="menu">
+            <header id="menu-heading">PRISMORY</header>
+            <div class="lvl" id="easy" onclick="OpenLevel(0);">EASY</div>
+            <div class="lvl" id="medium" onclick="OpenLevel(1);">MEDIUM</div>
+            <div class="lvl" id="hard" onclick="OpenLevel(2);">HARD</div>
+            <div class="lvl" id="very-hard" onclick="OpenLevel(3)">VERY HARD</div>
+            <div class="lvl" id="impossible" onclick="OpenLevel(7);">IMPOSSIBLE</div>
+            <div id="rules-btn" onclick="ShowRules();">RULES</div>
+        </nav>
+
+        <!-- Level Section -->
+        <section id="level"></section>
+
+        <!-- Rules Section -->
+        <div id="rules-page">
+            <div id="rules">
+                <header id="rules-heading">RULES</header>
+                <div id="rules-text">
+                    There will be some glasses (or test tubes to be exact xD), your task is to put the liquids with the same color together!
+                    You can transfer different colored water from one glass to another only if the other glass is empty or its topmost layer of water
+                    is of the same color as the one from which water is to be taken. The glass you have selected will be highlighted to prevent confusion.
+                    Restart button will take you back to the beginning of the level, also every time you open the same level the water will be shuffled.
+                    Check out the real game 'Water Sort Puzzle' on the Playstore, I have cloned it.
+                </div>
+                <div id="back" onclick="HideRules();">BACK</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Testtube.js"></script>
+
+</body>
+</html>
