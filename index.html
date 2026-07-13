@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yatharth Pathak | JavaScript Projects</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:linear-gradient(-45deg,#020617,#0f172a,#111827,#1e293b);
+background-size:400% 400%;
+animation:gradient 15s ease infinite;
+color:white;
+min-height:100vh;
+
+}
+
+@keyframes gradient{
+
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+
+}
+
+header{
+
+padding:80px 20px 40px;
+text-align:center;
+
+}
+
+header h1{
+
+font-size:55px;
+margin-bottom:15px;
+
+}
+
+header h1 span{
+
+color:#38bdf8;
+
+}
+
+header p{
+
+max-width:800px;
+margin:auto;
+font-size:18px;
+color:#d1d5db;
+line-height:1.8;
+
+}
+
+.stats{
+
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+
+}
+
+.stat{
+
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:18px 30px;
+border-radius:15px;
+border:1px solid rgba(255,255,255,.1);
+
+}
+
+.stat h2{
+
+color:#38bdf8;
+
+}
+
+.search{
+
+display:flex;
+justify-content:center;
+margin:50px 20px;
+
+}
+
+.search input{
+
+width:650px;
+max-width:95%;
+padding:18px;
+border:none;
+outline:none;
+border-radius:50px;
+font-size:17px;
+background:white;
+
+}
+
+.container{
+
+width:92%;
+max-width:1450px;
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+padding-bottom:80px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.07);
+backdrop-filter:blur(16px);
+
+border-radius:20px;
+
+padding:28px;
+
+border:1px solid rgba(255,255,255,.1);
+
+transition:.35s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 30px rgba(56,189,248,.35);
+
+}
+
+.card h2{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.card p{
+
+line-height:1.7;
+
+color:#d1d5db;
+
+margin-bottom:25px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:13px 24px;
+
+background:#38bdf8;
+
+text-decoration:none;
+
+color:white;
+
+font-weight:600;
+
+border-radius:30px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#0ea5e9;
+
+transform:scale(1.06);
+
+}
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+background:rgba(0,0,0,.25);
+
+}
+
+footer a{
+
+text-decoration:none;
+
+color:#38bdf8;
+
+margin:0 10px;
+
+}
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:38px;
+
+}
+
+header p{
+
+font-size:16px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🚀 <span>Yatharth Pathak</span></h1>
+
+<p>
+
+Welcome to my JavaScript Projects Collection.
+
+This portfolio showcases interactive projects, games, simulations and utility applications built using HTML, CSS and JavaScript.
+
+</p>
+
+<div class="stats">
+
+<div class="stat">
+<h2>15+</h2>
+Projects
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+JavaScript
+</div>
+
+<div class="stat">
+<h2>HTML • CSS • JS</h2>
+Frontend
+</div>
+
+</div>
+
+</header>
+
+<div class="search">
+
+<input type="text" id="search" placeholder="🔍 Search Projects...">
+
+</div>
+
+<div class="container" id="projects">
+
+<div class="card">
+<h2>⚛ 2D Model of Atom</h2>
+<p>Interactive visualization of atomic structure.</p>
+<a href="Atom2d.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>🌌 3D Model of Atom</h2>
+<p>Interactive 3D atomic model using JavaScript.</p>
+<a href="Atom3d.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>⭕ Circle Animation</h2>
+<p>Creative animation made with JavaScript.</p>
+<a href="Circle.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>💱 Currency Converter</h2>
+<p>Convert currencies instantly.</p>
+<a href="CurrencyConverter.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>🎮 Escape Dash</h2>
+<p>Fast paced JavaScript game.</p>
+<a href="EscapeDash.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>🍉 Fruit Ninja</h2>
+<p>Slice fruits and score points.</p>
+<a href="FruitNinja.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>🏒 Glow Hockey</h2>
+<p>Air Hockey inspired browser game.</p>
+<a href="GlowHockey.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>🗼 Tower of Hanoi</h2>
+<p>Classic recursion puzzle.</p>
+<a href="Hanoi.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>🤖 Jarvis Assistant</h2>
+<p>Voice inspired browser assistant.</p>
+<a href="Jarvis.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>🎨 Paint Application</h2>
+<p>HTML5 Canvas drawing application.</p>
+<a href="Paint.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>✊ Rock Paper Scissors</h2>
+<p>Play against the computer.</p>
+<a href="RockPaperScissors.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>☀ Solar System</h2>
+<p>Animated planetary simulation.</p>
+<a href="SolarSystem.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>🕷 Spider Animation</h2>
+<p>Creative CSS & JavaScript animation.</p>
+<a href="Spider.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>⏱ Stopwatch</h2>
+<p>Digital stopwatch application.</p>
+<a href="Stopwatch.html" class="btn">Launch Project</a>
+</div>
+
+<div class="card">
+<h2>🧪 Test Tube Simulation</h2>
+<p>Laboratory inspired interactive animation.</p>
+<a href="Testtube.html" class="btn">Launch Project</a>
+</div>
+
+</div>
+
+<footer>
+
+<h3>Yatharth Pathak</h3>
+
+<p style="margin-top:10px;margin-bottom:20px;color:#d1d5db;">
+Frontend Developer • JavaScript Enthusiast
+</p>
+
+<a href="https://github.com/Yatharth007Pathak" target="_blank">GitHub</a>
+
+<a href="https://yatharth007-portfolio-css.netlify.app/" target="_blank">Portfolio</a>
+
+<p style="margin-top:25px;color:#9ca3af;">
+© 2026 Yatharth Pathak. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+const search=document.getElementById("search");
+
+search.addEventListener("keyup",function(){
+
+let filter=this.value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+let text=card.innerText.toLowerCase();
+
+card.style.display=text.includes(filter)?"block":"none";
+
+});
+
+});
+
+</script>
+<script src="script.js"></script>
+</body>
+</html>
