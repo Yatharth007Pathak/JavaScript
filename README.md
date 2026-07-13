@@ -6,7 +6,7 @@ A collection of interactive web projects built using **HTML, CSS, and JavaScript
 
 ## 🌐 Live Demo
 
-🔗 **Live Website:** https://javascript-projects.netlify.app/
+🔗 **Live Website:** https://yatharthjsportfolio.netlify.app/
 
 ---
 
@@ -123,12 +123,6 @@ JavaScript/
 - 🧠 Logic-based projects
 - ⚡ Pure JavaScript implementation
 - 🌐 Easy online access through Netlify
-
----
-
-## Visit the live website:
-
-**https://yatharthjsportfolio.netlify.app/**
 
 ---
 
